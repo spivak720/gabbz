@@ -5,10 +5,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Learn to Spell</title>
+    <style>
+        #input-field {
+            width:60%;
+            margin-top:20px;
+            margin-left:20%;
+            padding:0px;
+            font-size:42px;
+            box-shadow:0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+            text-transform:uppercase;
+            text-align:center;
+        }
+        @media (max-device-width: 480px) {
+             #input-field {
+                 width:90%;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<input type="text" style="width:60%; margin-top:20px; margin-left:20%; padding:0px; font-size:42px; box-shadow:0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%); text-transform:uppercase; text-align:center;" id="input_field" autofocus="autofocus"">
+<input type="text" id="input_field" autofocus="autofocus"">
 <p style="display:none;" id="display_field"></p>
 <img src="" alt="" style="width:40%; margin-left:31%; margin-top:30px;" id="img_field">
 
