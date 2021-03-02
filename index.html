@@ -34,19 +34,16 @@
 <body>
 
 <input type="text" id="input_field" autofocus="autofocus"">
-<p style="display:none;" id="display_field"></p>
 <img src="" alt="" id="img_field">
 
 <script>
-    const inputField = document.querySelector('#input_field');
-    const imageField = document.querySelector('#img_field');
-//    const displayField = document.querySelector('#display_field');
+    var inputField = document.querySelector('#input_field');
+    var imageField = document.querySelector('#img_field');
     if(inputField){
-        inputField.addEventListener('keyup' {
+        inputField.addEventListener('keyup', function (e) {
             if (inputField.value !== "") {
 
                 if(inputField.value ==='papa'){
-  //                  displayField.innerText = 'papa.jpg';
                     imageField.setAttribute('src', './images/papa.jpg');
                 }
                 if(inputField.value ==='mama'){
