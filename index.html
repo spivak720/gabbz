@@ -4,19 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Preview</title>
+    <title>Learn to Spell</title>
     <style>
       .all-images-wrapper img {
         display: none;
-        width: 100%;
-        max-width: 400px;
+        width:40%;
+        margin-left:31%;
+        margin-top:30px;
       }
       .all-images-wrapper img.show {
         display: inline-block;
       }
       #filter-input {
-        margin: 10px 0;
-        padding: 5px 10px;
+        width:60%;
+        margin-top:20px;
+        margin-left:20%;
+        padding:0px;
+        font-size:42px;
+        box-shadow:0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+        text-transform:uppercase;
+        text-align:center;
+      }
+      @media (max-device-width: 480px) {
+        #filter-input {
+            width:80%;
+            margin-left:10%;
+            padding:10px 0px;
+        }
+        .all-images-wrapper img.show {
+            width:80%;
+            margin-left:10%;
+        }
       }
     </style>
   </head>
@@ -25,13 +43,13 @@
     <div id="filter-images-wrapper" class="all-images-wrapper">
       <img
         src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_960_720.jpg"
-        data-tag="baby"
-        alt="baby"
+        data-tag="cat"
+        alt="cat"
       />
       <img
         src="https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_960_720.jpg"
-        data-tag="mama"
-        alt="mama"
+        data-tag="dog"
+        alt="dog"
       />
       <img
         src="https://cdn.pixabay.com/photo/2017/02/07/16/47/kingfisher-2046453_960_720.jpg"
