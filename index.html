@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn to Spell</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <input type="text" style="width:33%; margin-top:20px; margin-left:33%; padding:40px 20px; font-size:60px; box-shadow:0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%); text-transform:uppercase; text-align:center;" id="input_field" autofocus="autofocus"">
+            <p style="display:none;" id="display_field"></p>
+        </div>
+    </div>
+    <div class="row">
+        <img src="" alt="" style="width:40%; margin-left:31%; margin-top:30px;" id="img_field">
+    </div>
+</div>
+
+<script>
+    const inputField = document.querySelector('#input_field');
+    const imageField = document.querySelector('#img_field');
+    const displayField = document.querySelector('#display_field');
+    if(inputField){
+        inputField.addEventListener('keyup', function (e) {
+            if (inputField.value !== "") {
+
+                if(inputField.value ==='papa'){
+  //                  displayField.innerText = 'papa.jpg';
+                    imageField.setAttribute('src', './images/papa.jpg');
+                }
+                if(inputField.value ==='mama'){
+                    imageField.setAttribute('src', './images/mama.jpg');
+                }
+                if(inputField.value ==='gabby'){
+                    imageField.setAttribute('src', './images/gabby.jpg');
+                }
+                if(inputField.value ==='baby'){
+                    imageField.setAttribute('src', './images/baby.jpg');
+                }
+                if(inputField.value ==='zoey'){
+                    imageField.setAttribute('src', './images/baby.jpg');
+                }
+                if(inputField.value ==='mila'){
+                    imageField.setAttribute('src', './images/mila.jpg');
+                }
+            }
+        })
+    }
+</script>
+
+</body>
+</html>
