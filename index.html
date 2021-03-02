@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Learn to Spell</title>
     <style>
-        #input-field {
+        #input_field {
             width:60%;
             margin-top:20px;
             margin-left:20%;
@@ -16,9 +16,17 @@
             text-transform:uppercase;
             text-align:center;
         }
+        #img_field {
+            width:40%;
+            margin-left:31%;
+            margin-top:30px;
+        }
         @media (max-device-width: 480px) {
-             #input-field {
+             #input_field {
                  width:90%;
+            }
+            #img_field {
+                width:90%;
             }
         }
     </style>
@@ -27,7 +35,7 @@
 
 <input type="text" id="input_field" autofocus="autofocus"">
 <p style="display:none;" id="display_field"></p>
-<img src="" alt="" style="width:40%; margin-left:31%; margin-top:30px;" id="img_field">
+<img src="" alt="" id="img_field">
 
 <script>
     const inputField = document.querySelector('#input_field');
