@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<link href='http://fonts.googleapis.com/css?family=Google+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://localfishingguides.com/site_assets/css/bootstrap.css">
+<style>
+  .row {
+    margin-top:20px;
+  }
+  .col-md-3 {
+    width:20%;
+    margin-left:2.5%;
+    margin-right:2.5%;
+    padding-top:5%;
+    padding-bottom:5%;
+    float:left;
+    box-shadow:0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+  }
+  a {
+    font-size:72px;
+    font-weight:bold;
+    padding-left:35%;
+    font-family:Google Sans;
+    color:black;
+    cursor: pointer;
+  }
+  a:hover {
+    color:black;
+  }
+</style>
+<html>
+<body>
+    <div class="row">
+        <div class="col-md-3">
+            <audio id="ma" src="audio/ma.m4a" autoplay="false" ></audio>
+            <a onclick="playMa();">MA</a>
+        </div>
+        <div class="col-md-3">
+            <audio id="ba" src="audio/ba.m4a" autoplay="false" ></audio>
+            <a onclick="playBa();">BA</a>
+        </div>
+        <div class="col-md-3">
+            <audio id="la" src="audio/la.m4a" autoplay="false" ></audio>
+            <a onclick="playLa();">LA</a>
+        </div>
+        <div class="col-md-3">
+            <audio id="pa" src="audio/pa.m4a" autoplay="false" ></audio>
+            <a onclick="playPa();">PA</a>
+        </div>
+    </div>
+    <div class="gap"></div>
+    <div class="row">
+      <div class="col-md-3">
+          <audio id="na" src="audio/na.m4a" autoplay="false" ></audio>
+          <a onclick="playNa();">NA</a>
+      </div>
+      <div class="col-md-3">
+        <audio id="sa" src="audio/sa.m4a" autoplay="false" ></audio>
+        <a onclick="playSa();">SA</a>
+      </div>
+      <div class="col-md-3">
+          <audio id="ca" src="audio/ca.m4a" autoplay="false" ></audio>
+          <a onclick="playCa();">CA</a>
+      </div>
+      <div class="col-md-3">
+          <audio id="da" src="audio/da.m4a" autoplay="false" ></audio>
+          <a onclick="playDa();">DA</a>
+      </div>
+  </div>
+<script>
+    function playMa() {
+        var sound = document.getElementById("ma");
+        sound.play();
+    }
+    function playBa() {
+        var sound = document.getElementById("ba");
+        sound.play();
+    }
+    function playLa() {
+        var sound = document.getElementById("la");
+        sound.play();
+    }
+    function playPa() {
+        var sound = document.getElementById("pa");
+        sound.play();
+    }
+    function playNa() {
+        var sound = document.getElementById("na");
+        sound.play();
+    }
+    function playSa() {
+        var sound = document.getElementById("sa");
+        sound.play();
+    }
+    function playCa() {
+        var sound = document.getElementById("ca");
+        sound.play();
+    }
+    function playDa() {
+        var sound = document.getElementById("da");
+        sound.play();
+    }
+</script>
+</body>
+</html>
